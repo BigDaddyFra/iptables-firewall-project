@@ -1,0 +1,13 @@
+# Host-Based Firewall with iptables  
+## Lab: Blocking Internet Access for a Specific User  
+
+### **Overview**  
+Implemented an `iptables` firewall rule on Ubuntu to block outgoing internet traffic for user `Bob` (UID: 1000), then restored access by deleting the rule.  
+
+### **Steps**  
+1. **Identified Bob’s UID**:  
+   ```bash
+   id bob
+   # Output: uid=1000(bob)
+iptables -A OUTPUT -o eth0 -m owner --uid-owner 1000 -j DROP
+
