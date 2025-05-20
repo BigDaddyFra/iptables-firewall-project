@@ -1,5 +1,16 @@
 # iptables-firewall-project
 
+This project demonstrates how to design, implement, and manage firewall rules using `iptables` on a Linux system. It includes categorized rule sets and automation scripts for ease of use.
+
+## 🔐 Features
+- Basic inbound/outbound traffic filtering
+- Advanced protocol-specific rule sets
+- VPN-aware configurations
+- Logging of all dropped packets
+- Setup and reset automation scripts
+
+## 📁 Directory Structure
+
 This project demonstrates how to design, implement, and manage firewall rules using `iptables` on a Linux system. It includes categorized rule sets for basic, advanced, and VPN environments, as well as supporting scripts for automation and logging.
 
 ## Features
@@ -19,3 +30,8 @@ This project demonstrates how to design, implement, and manage firewall rules us
 - `iptables`
 - `sudo` privileges
 # iptables-firewall-project
+
+## 🚀 Usage
+To apply firewall rules:
+```bash
+sudo ./scripts/apply-rules.sh basic
